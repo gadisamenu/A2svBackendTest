@@ -32,7 +32,7 @@ public class GetRecipesQueryHandler: IRequestHandler<GetRecipesQuery, ErrorOr<Ba
 
 
             return new BaseResponse<List<RecipeDto>>(){
-                Message="User Detail fetched successfully",
+                Message="Recipe Detail fetched successfully",
                 Value=_mapper.Map<List<RecipeDto>>(user)
             };
         }
