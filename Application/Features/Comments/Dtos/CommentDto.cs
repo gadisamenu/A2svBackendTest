@@ -1,4 +1,3 @@
-using Domain.Ingredients;
 
 namespace Application.Features.Comments.Dtos
 {

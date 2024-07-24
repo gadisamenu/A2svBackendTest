@@ -8,6 +8,8 @@ namespace Application.Features.Auth.Dtos
     {
         public string Content {get; set;}
         public DateTime Date { get; set; }
+
+         public long RecipeId {get; set; }
     
     }
 }

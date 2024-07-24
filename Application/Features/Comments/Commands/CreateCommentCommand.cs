@@ -34,10 +34,13 @@ namespace Application.Features.Auth.Commands
         {
             var user = await _unitOfWork.UserRepository.GetUserByIdAsync(command.UserId);
 
+            var recipe = await _unitOfWork.RecipeRepository.GetByIdAsync(command.createCommentDto.RecipeId);
+
             var Comment = new Comment {
                 Content = command.createCommentDto.Content,
                 Author = user.Value,
-                Date = new DateTime()
+                Date = new DateTime(),
+                Recipe = recipe
             };
 
             var CommentRes = await _unitOfWork.CommentRepository.AddAsync(Comment);
