@@ -3,7 +3,6 @@ using Application.Features.Auth.Commands;
 using Application.Features.Auth.Dtos;
 using Application.Contracts;
 using Application.Features.Auth.Queries;
-using Application.Features.Comments.Dtos;
 
 
 namespace API.Controllers
